@@ -7,6 +7,8 @@ $types = array(
     'jpeg' => 'image/jpeg',
     'gif'  => 'image/gif',
     'webm' => 'video/webm',
+    'flac' => 'audio/flac',
+    'mp3'  => 'audio/mp3',
 );
 
 $index = ! (isset($_GET['type']) && isset($_GET['file']));
