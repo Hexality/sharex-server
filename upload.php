@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/protected/config/config.php';
 
-$allowedTypes = array('image/png', 'image/jpeg', 'image/gif', 'video/webm');
+$allowedTypes = array('image/png', 'image/jpeg', 'image/gif', 'video/webm', 'video/mp4' 'audio/flac', 'audio/mp3');
 
 if ( ! isset($_POST['password']) || $_POST['password'] !== PASSKEY) {
     die('error,e-401');
@@ -16,7 +16,7 @@ if ($_FILES['image']['error'] > 0) {
     die('error,e-500');
 }
 
-$dir = __DIR__ . '/images/';
+$dir = __DIR__ . '/media/';
 
 saveImage($_FILES['image']['type'], $_FILES['image']['tmp_name']);
 
@@ -29,7 +29,7 @@ function generateNewHash($type)
         $str .= substr($an, rand(0, strlen($an) - 1), 1);
     }
 
-    if ( ! file_exists(__DIR__ . "/images/$type/$str.$type")) {
+    if ( ! file_exists(__DIR__ . "/media/$type/$str.$type")) {
         return $str;
     } else {
         return generateNewHash($type);
