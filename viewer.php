@@ -7,7 +7,7 @@ $types = array(
     'jpeg' => 'image/jpeg',
     'gif'  => 'image/gif',
     'webm' => 'video/webm',
-    'mp4'  => 'video/mp4'
+    'mp4'  => 'video/mp4',
     'flac' => 'audio/flac',
     'mp3'  => 'audio/mp3',
 );
