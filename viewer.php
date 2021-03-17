@@ -9,7 +9,7 @@ $types = array(
     'gif'  => 'image/gif',
     'webm' => 'video/webm',
     'mp4'  => 'video/mp4',
-    'm4v'  +> 'video/mp4',
+    'm4v'  => 'video/mp4',
     'flac' => 'audio/flac',
     'mp3'  => 'audio/mp3',
 );
