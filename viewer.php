@@ -5,6 +5,7 @@ require_once __DIR__ . '/protected/config/config.php';
 $types = array(
     'png'  => 'image/png',
     'jpeg' => 'image/jpeg',
+    'jpg'  => 'image/jpeg',
     'gif'  => 'image/gif',
     'webm' => 'video/webm',
     'mp4'  => 'video/mp4',
