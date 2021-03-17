@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/protected/config/config.php';
 
-$allowedTypes = array('image/png', 'image/jpeg', 'image/gif', 'video/webm', 'video/mp4' 'audio/flac', 'audio/mp3');
+$allowedTypes = array('image/png', 'image/jpeg', 'image/gif', 'video/webm', 'video/mp4', 'audio/flac', 'audio/mp3');
 
 if ( ! isset($_POST['password']) || $_POST['password'] !== PASSKEY) {
     die('error,e-401');
