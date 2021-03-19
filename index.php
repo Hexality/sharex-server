@@ -1,2 +1,5 @@
-header('Location: index.html');
-exit;
+<?php
+// index.php
+header("Location: index.html");
+exit();
+?>
